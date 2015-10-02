@@ -24,7 +24,7 @@ public class MainActivity extends Activity {
         m_textView = (TextView) findViewById( R.id.text );
 
         // Take 1
-        doWorkAndUpdateCounter();
+        //doWorkAndUpdateCounter();
 
         // Take 2
         //m_runnable.run();
@@ -56,8 +56,11 @@ public class MainActivity extends Activity {
     }
 
     void doWorkAndUpdateCounter() {
-        work( 20 );
-        updateCounter();
+
+        for ( int n=0; n<10; ++n ) {
+            work(3);
+            updateCounter();
+        }
     }
 
 }
